@@ -1,0 +1,192 @@
+/* scale = 1,4232 */
+
+a:link,
+a:visited,
+a:active,
+a:focus,
+a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+ul,
+li {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	list-style-type: none;
+}
+
+body {
+    font-family: 'Fjalla One', sans-serif;
+    color: #fff;
+	background-image: url('../img/top-bg.png');
+	background-repeat: no-repeat;
+	background-position: top center;
+    background-color: #29606b;
+    margin: 0;
+}
+
+.main-container {
+    width: 824px;
+	margin: 0 auto;
+	text-align: center;
+    min-height: 100%;
+}
+
+.main-container:after {
+    content: "";
+    display: block;
+}
+
+/* menu */
+
+.menu {
+	width: inherit; 
+	height: 56px; 
+	background-color: rgba(41, 96, 107, 0.4);
+	border-color: #2a6c78;
+    border-style: solid;
+    border-width: 0 1px 1px 1px;
+}
+
+.menu .title {
+	float: left;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-top: 18px;
+}
+
+.menu .navigation {
+    font-size: 13px;
+    float: right;	
+    padding-right: 6px;
+    margin-top: 21px;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0 20px;
+}
+
+.navigation li {
+	float: left;
+    margin: 0 0 0 23px;
+}
+
+/* banner */
+
+.banner {
+	height: 214px;
+	text-align: center;
+	padding-top: 96px;
+}
+
+.banner h1 {
+	font-size: 29px;	
+}
+
+.banner h2 {
+	font-size: 22px;	
+    margin-top: 10px;
+}
+
+.banner .btn {
+	margin-top: 24px;
+	font-size: 14px;
+}
+
+.row-header {	
+	font-size: 22px;	
+}
+
+.row-header2 {	
+	font-size: 16px;
+}
+
+
+/* row1 */
+
+.row1 {
+	height: 473px;
+	width: inherit;
+	background-color: yellow;
+}
+
+/* row2 */
+
+.row2 {
+	padding-top: 50px;
+	height: 349px;
+	width: inherit;
+}
+
+.row2 .row-header2 {
+	margin-top: 5px;
+}
+
+.row2-items {
+	background-color: green;
+	margin-top: 49px;
+	min-height: 100%;
+	height: 349px;
+}
+
+/* row3 */
+
+.row3 {
+	height: 473px;
+	width: inherit;
+	padding-top: 55px;
+}
+
+.row3-items {	
+	background-color: yellow;
+}
+
+
+/* footer */
+
+
+.footer {
+	height: 140px; 
+	width: 100%;
+	background-color: #245963;
+}
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.1.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.social-icon {
+    width: 36px; 
+    height: 36px; 
+    border-radius: 18px;
+    background-color: #fff;
+    color: #245963;
+	font-family: FontAwesome;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.social-icon .facebook:before {
+    content: "\f09a";    
+    margin-right: 1px;
+}
+
+.social-icon .twitter:before {
+    content: "\f099";
+}
