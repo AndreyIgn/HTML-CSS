@@ -63,16 +63,18 @@ body {
 
 /* common */
 .btn {
+	margin: auto;
 	text-transform: uppercase;
+	text-align: center;
 }
 .row-header {
-	clear: both;
 	font-size: 22px;
+	font-weight: 300;
 	text-transform: uppercase;
 }
 .row-header2 {
-	clear: both;
 	font-size: 14px;
+	letter-spacing: 0.3px;
 	text-transform: uppercase;
 }
 .line {
@@ -136,19 +138,28 @@ body {
 }
 .banner h1 {
 	font-size: 29px;
+	letter-spacing: 3.3px;
+	font-weight: 500;
+}
+.banner .btn-empty {
+	padding-top: 9px;
+	margin-top: 16px;
+	font-size: 13px;
+	width: 101px;
+	height: 40px;
+	background-image: url('../img/btn-empty.png');
+	background-repeat: no-repeat;
 }
 .banner h2 {
 	font-size: 22px;
 	margin-top: 10px;
-}
-.banner .btn {
-	margin-top: 24px;
-	font-size: 14px;
+	letter-spacing: 3.3px;
+	font-weight: 500;
 }
 
 /* row1 */
 .row1 {
-	margin-top: 98px;
+	margin-top: 74px;
 	height: 472px;
 }
 .row1 li {
@@ -176,7 +187,7 @@ body {
 
 /* row2 */
 .row2 {
-	padding-top: 50px;
+	margin-top: 53px;
 }
 .row2 .row-header2 {
 	margin-top: 7px;
@@ -188,7 +199,8 @@ body {
 	width: 85px;
 }
 .row2-items {
-	margin-top: 49px;
+	margin-top: 47px;
+	height: 350px;
 }
 .row2-items .span {
 	height: 5px;
@@ -217,6 +229,27 @@ body {
 	background-size: 286px 382px;
 	background-position: -93px -65px;
 }
+.row2 .btn {
+	margin-top: 18px;
+	padding-top: 4px;
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #fff;
+	border: none;
+	background-repeat: no-repeat;
+	width: 73px;
+	height: 29px;
+}
+.row2 .btn-red {
+	background-image: url('../img/btn-red.png');
+}
+.row2 .btn-orange {
+	background-image: url('../img/btn-orange.png');
+}
+.row2 .btn-emerald {
+	background-image: url('../img/btn-emerald.png');
+}
 .row2 li {
 	float: left;
 	padding-right: 20px;
@@ -244,7 +277,7 @@ body {
 	clear: left;
 	height: 415px;
 	width: inherit;
-	padding-top: 56px;
+	margin-top: 53px;
 }
 .row3 .row-header {
 	margin-top: 0.7em;
@@ -287,12 +320,17 @@ form .message {
 }
 form .btn-submit {
 	margin-top: 18px;
+	padding-bottom: 6px;
 	font-family: 'Fjalla One', sans-serif;
 	font-size: 12px;
 	text-transform: uppercase;
 	color: #fff;
+	border: none;
+	background-color: inherit;
+	background-image: url('../img/btn-submit.png');
+	background-repeat: no-repeat;
 	width: 72px;
-	height: 25px;
+	height: 29px;
 }
 
 /* footer */
