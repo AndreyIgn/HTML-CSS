@@ -16,6 +16,7 @@ h4,
 h5,
 h6,
 a,
+p,
 ul,
 li {
 	border: 0;
@@ -88,6 +89,7 @@ body {
 	/*height: 214px;*/
 	text-align: center;
 	padding-top: 96px;
+	text-transform: uppercase;	
 }
 
 .banner h1 {
@@ -99,6 +101,10 @@ body {
     margin-top: 10px;
 }
 
+.btn {	
+	text-transform: uppercase;	
+}
+
 .banner .btn {
 	margin-top: 24px;
 	font-size: 14px;
@@ -106,12 +112,49 @@ body {
 
 .row-header {	
 	clear: both;
-	font-size: 22px;	
+	font-size: 22px;
+	text-transform: uppercase;
 }
 
 .row-header2 {	
 	clear: both;
-	font-size: 16px;
+	font-size: 14px;
+	text-transform: uppercase;	
+}
+
+/* icons */
+
+.icon {
+    margin: 0 auto;
+	content: "";
+    width: 70px; 
+    height: 70px; 
+    border-radius: 35px;
+    background-color: #fff;
+    color: #245963;
+    background-size: 39px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.icon-chat {
+	background-image: url('../img/chat.png');
+}
+
+.icon-crown {
+	background-image: url('../img/crown.png');
+}
+
+.icon-pencil {
+	background-image: url('../img/pencil.png');
+}
+
+.icon-user {
+	background-image: url('../img/user.png');
+}
+
+.icon-mail {
+	background-image: url('../img/mail.png');
 }
 
 .red {
@@ -130,10 +173,16 @@ body {
 	background-color: #9b58b5;
 }
 
+.item-text {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 11px;
+	text-align: center;
+}
+
 /* row1 */
 
 .row1 {
-	margin-top: 100px;
+	margin-top: 98px;
 }
 
 .row1 table {
@@ -141,10 +190,27 @@ body {
 }
 
 .row1 td {
+	display: table-cell;
+	vertical-align: middle;
 	margin: 0;
 	padding: 0;
 	width: 411px;
 	height: 236px;
+}
+
+.row1-item {
+	margin-top: 10px;
+}
+
+.row1 .item-header {
+	margin-top: 0.5em;
+    font-family: 'Fjalla One', sans-serif;
+	font-size: 21px;	
+	text-transform: uppercase;	
+}
+
+.row1 .item-text {
+	margin: 0.4em auto;
 }
 
 
@@ -156,11 +222,43 @@ body {
 }
 
 .row2 .row-header2 {
-	margin-top: 5px;
+	margin-top: 7px;
 }
 
 .row2-items {
 	margin-top: 49px;	
+}
+
+.row2-items .span {
+	height: 5px;
+}
+
+.row2 .item-icon {
+    margin: 0 auto;
+	content: "";
+    width: 128px; 
+    height: 128px; 
+    border-radius: 64px;
+    background-color: #fff;
+	background-repeat: no-repeat;
+}
+
+.item-icon-user1 {
+	background-image: url('../img/user1.png');
+	background-size: 337px 450px;
+	background-position: -88px -50px;
+}
+
+.item-icon-user2 {
+	background-image: url('../img/user2.png');
+	background-size: 337px 454px;
+	background-position: -89px -58px;
+}
+
+.item-icon-user3 {
+	background-image: url('../img/user3.png');
+	background-size: 286px 382px;
+	background-position: -93px -65px;
 }
 
 .row2 li {
@@ -170,12 +268,22 @@ body {
 
 .row2 li:last-of-type {
 	padding-right: 0;	
+	clear: right;
 }
 
 .row2-item {	
+	display: table-cell;
+	vertical-align: middle;
 	background-color: #245963;
-	height: 358px;
+	height: 345px;
 	width: 260px;
+}
+
+.row2 .item-text {
+	margin: 2em auto;
+	color: #76b2be;
+	width: 82%;
+	line-height: 1.5em;
 }
 
 /* row3 */
@@ -183,51 +291,68 @@ body {
 
 .row3 {
 	clear: left;
-	height: 473px;
+	height: 435px;
 	width: inherit;
 	padding-top: 56px;
 }
 
-.row3 form {
-    margin: 0 auto;
-	width: 400px;
-}
-
 .row3 .row-header {
-	margin-top: 20px;
+	margin-top: 0.7em;
 }
 
 .row3 .row-header2 {
-	margin-top: 14px;
+	margin-top: 0.6em;
 }
 
-.icon {
-    margin: 0 auto;
-	content: "";
-    width: 72px; 
-    height: 72px; 
-    border-radius: 36px;
-    background-color: #fff;
-    color: #245963;
-	background-repeat: no-repeat;
-	background-position: center center;
+.row3 form {
+    margin: 25px auto;
+	width: 400px;
 }
 
-.icon-chat {
-	background-image: url('../img/chat.png');
+input, textarea {
+	 background-color: #245963; 
+	 border: solid 1px #387d89;
 }
 
-.icon-mail {
-	background-image: url('../img/mail.png');
+form .textbox { 
+	width: 188px; 
+	height: 28px;
+}
+
+form .name {
+	float: left;
+}
+
+form .email {
+	float: right;
+}
+
+form .message {
+	clear: both;
+	margin-top: 20px;
+	width: 394px; 
+	height: 85px;
+}
+
+form .btn-submit {
+	margin-top: 18px;
+    font-family: 'Fjalla One', sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #fff;
+	width: 72px; 
+	height: 25px;
 }
 
 /* footer */
 
 
 .footer {
+	font-family: 'Source Sans Pro', sans-serif;
 	height: 140px; 
 	width: 100%;
 	background-color: #245963;
+	font-size: 11px;
     text-align: center;
 }
 
@@ -240,14 +365,15 @@ body {
 }
 
 .contacts {
+	margin-top: 10px;
 	display: inline-block;
 }
 
 
 .social-icon {
-    width: 36px; 
-    height: 36px; 
-    border-radius: 18px;
+    width: 26px; 
+    height: 26px; 
+    border-radius: 13px;
     background-color: #fff;
     color: #245963;
 	font-family: FontAwesome;
@@ -264,4 +390,12 @@ body {
 .social-icon .twitter:before {
     content: "\f099";
     vertical-align: middle; 
+}
+
+.copyrights {
+	margin-top: 43px;
+}
+
+.gold {
+	color: #fdbd1f;
 }
