@@ -316,12 +316,6 @@ button
 	margin: 25px auto;
 	width: 400px;
 }
-.row3 .row-header2 .line {
-	display: inline-block;
-	margin: 0 0.5em;
-	margin-bottom: 0.3em;
-	width: 57px;
-}
 .row3 .row-header2 .linned:before {
 	width: 57px;
 }
@@ -397,10 +391,6 @@ form .btn-submit {
 	border: solid 2px #387d89;
 	border-width: 2px 0 0 0;
 	content: "";
-}
-.footer .line {
-	margin: 20px auto;
-	width: 200px;
 }
 .social-icon {
 	width: 26px;
