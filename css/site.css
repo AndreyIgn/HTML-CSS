@@ -63,6 +63,10 @@ body:before {
 .navigation ul {
 	list-style-type: none;
 	margin: 0 20px;
+	overflow: auto;
+}
+.navigation li:last-of-type {
+	clear: right;
 }
 .navigation li {
 	float: left;
@@ -79,6 +83,18 @@ body:before {
 	font-size: 14px;
 	letter-spacing: 0.3px;
 	text-transform: uppercase;
+}
+.btn {
+	display: inline-block;
+	text-transform: uppercase;
+	text-align: center;
+	margin: auto;
+	background: none;
+	font-family: 'Fjalla One', sans-serif;
+	color: #fff;
+	cursor: pointer;
+	border: none;
+	outline: none;
 }
 button
 {
@@ -170,7 +186,7 @@ button
 }
 .banner .btn-empty {
 	margin-top: 16px;
-	padding-bottom: 4px;
+	padding-top: 10px;
 	font-size: 12px;
 	width: 101px;
 	height: 40px;
@@ -209,7 +225,8 @@ button
 	text-transform: uppercase;
 }
 .row1 .item-text {
-	margin-top: 0.4em;
+	width: 60%;
+	margin: 0.4em auto;
 }
 
 /* row2 */
@@ -230,9 +247,23 @@ button
 	margin-top: 47px;
 	height: 350px;
 }
-.row2-items .span {
-	height: 5px;
+.span {
+	border-style: solid;
+	border-top-width: 5px;
 }
+.span-red {	
+	border-color: #e84c3d;
+}
+.span-orange {	
+	border-color: #fdbd1f;
+}
+.span-emerald {	
+	border-color: #1bbc9b;
+}
+.row2-item {
+	border-top: 5px;
+}
+
 .row2 .item-icon {
 	margin: 0 auto;
 	content: "";
@@ -269,6 +300,53 @@ button
 	width: 73px;
 	height: 29px;
 }
+.row2 .btn {
+	height: 29px;
+	width: 73px;
+}
+.btn-colored {
+    position: relative;
+    color: #fff;
+}
+.btn-colored > span {
+    display: inline-block;
+    width: 73px;
+    height: 22.46153846153846px;
+    background-color: #007BFF;
+    left: 0px;
+    top: 0px;
+}
+.btn-colored > span+span {
+    position: absolute;
+    display: inline-block;
+    background-color: transparent;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    border: 6px solid transparent;
+    border-top: 6px solid #007BFF;
+    left: 34px;
+    top: 22px;
+}
+.btn-colored-red > span {
+    background-color: #e84c3d;
+}
+.btn-colored-red > span+span {
+    border-top-color: #e84c3d;
+}
+.btn-colored-orange > span {
+    background-color: #fdbd1f;
+}
+.btn-colored-orange > span+span {
+    border-top-color: #fdbd1f;
+}
+.btn-colored-emerald > span {
+    background-color: #1bbc9b;
+}
+.btn-colored-emerald > span+span {
+    border-top-color: #1bbc9b;
+}
+
 .row2 .btn-red {
 	background-image: url('../img/btn-red.png');
 }
